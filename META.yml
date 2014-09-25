@@ -3,6 +3,7 @@ abstract: 'Easily Manage LedgerSMB Installations'
 author:
   - 'Chris Travers <chris@efficito.com>'
 build_requires:
+  Test::Exception: 0
   Test::More: 0
 configure_requires:
   ExtUtils::MakeMaker: 0
@@ -18,5 +19,11 @@ no_index:
     - t
     - inc
 requires:
+  DBD::Pg: 0
+  DBI: 0
+  PGObject::Simple::Role: 0
+  PGObject::Util::DBAdmin: 0
+  PGObject::Util::DBMethod: 0
+  Try::Tiny: 0
   perl: 5.01
-version: 0.01
+version: 0.02
