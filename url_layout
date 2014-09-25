@@ -1,0 +1,10 @@
+root/host/port/ -> get => list dbs
+root/host/port/dbname/ -> get => db version and statistics info
+                         post => reload or upgrade db
+root/host/port/dbname/backup -> get => take backup, put => restore backup
+root/host/port/dbname/setup -> get => is set up?, put => set up for admin
+root/host/port/dbname/users => get => list of users, 
+                              post => global password reset requirements
+root/host/port/dbname/users/username get => info on user, 
+                                    post -> save user/reset password
+
