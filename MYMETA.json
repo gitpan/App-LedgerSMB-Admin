@@ -26,23 +26,27 @@
             "Test::More" : "0"
          }
       },
-      "configure" : {
-         "requires" : {
-            "ExtUtils::MakeMaker" : "0"
-         }
-      },
       "runtime" : {
          "requires" : {
             "DBD::Pg" : "0",
             "DBI" : "0",
+            "Dancer" : "0",
             "PGObject::Simple::Role" : "0",
             "PGObject::Util::DBAdmin" : "0",
             "PGObject::Util::DBMethod" : "0",
+            "Template" : "0",
             "Try::Tiny" : "0",
             "perl" : "5.01"
          }
       }
    },
    "release_status" : "stable",
-   "version" : "0.02"
+   "resources" : {
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/dwimperl/Task-DWIM.git",
+         "web" : "https://github.com/dwimperl/Task-DWIM"
+      }
+   },
+   "version" : "0.03"
 }

@@ -22,6 +22,8 @@ WriteMakefile(
     PREREQ_PM => {
         "DBI"                      => 0,
         "DBD::Pg"                  => 0,
+        "Dancer"                   => 0,
+        "Template"                 => 0,
         "Try::Tiny"                => 0,
         "PGObject::Simple::Role"   => 0,
         "PGObject::Util::DBMethod" => 0,
@@ -29,4 +31,14 @@ WriteMakefile(
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'App-LedgerSMB-Admin-*' },
+    META_MERGE => {
+       'meta-spec' => { version => 2 },
+        resources => {
+           repository => {
+             type => 'git',
+             url  => 'https://github.com/dwimperl/Task-DWIM.git',
+             web  => 'https://github.com/dwimperl/Task-DWIM',
+           },
+       },
+    },
 );
