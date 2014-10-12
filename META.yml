@@ -27,5 +27,5 @@ requires:
   Try::Tiny: 0
   perl: 5.01
 resources:
-  repository: https://github.com/dwimperl/Task-DWIM.git
-version: 0.03
+  repository: https://github.com/ledgersmb/App-LedgerSMB-Admin.git
+version: 0.04
